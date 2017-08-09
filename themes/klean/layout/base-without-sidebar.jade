@@ -1,0 +1,48 @@
+include _partial/helpers
+
+if page.title
+  - var current_title = page.title
+else
+  - var current_title = config.title
+
+if config.feed
+  case config.feed.type
+    when 'rss2'
+      - var feed_type='application/rss+xml'
+    when 'atom'
+    default
+      - var feed_type='application/atom+xml'
+
+doctype html
+html(lang='#{config.language}')
+
+  include _partial/head
+
+  body
+    nav.navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          button.navbar-toggle.collapsed(type="button",data-toggle="collapse",data-target="#navbar",aria-expanded="false",aria-controls="navbar")
+            span.sr-only='Toggle navigation'
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a#logo.navbar-brand(href=url_for('.'))
+            img(src=config.profile)
+            h1.hide=config.title
+            span=config.title
+        #navbar.navbar-collapse.collapse
+          ul.nav.navbar-nav.navbar-right
+            - for (var i in theme.menu)
+              +a_with_current(theme.menu[i].directory, __(theme.menu[i].page), theme.menu[i].icon)
+
+    #top.container.main-container
+      .starter-template
+        h2='Hello Internet!'
+      .col-xs-12: .content_container
+        block content
+      .col-xs-12
+        != partial('_partial/footer.jade')
+
+    include _partial/totop
+    include _partial/after_footer
