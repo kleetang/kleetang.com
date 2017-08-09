@@ -1,0 +1,17 @@
+mixin a_with_current(href, content, id)
+  - var url = url_for(href)
+  if (href == '.' && (is_home() || is_post())) || is_current(href)
+    li: a.current(href=url)= content
+  else if (href == 'archives/' && (is_tag() || is_category()))
+    li: a.current(href=url)= content
+  else if (href == 'about/' && (is_tag() || is_category()))
+    li: a.current(href=url)= content
+  else
+    li: a(href=url)= content
+
+mixin title(page)
+  if page
+    if page.title
+      = page.title
+    else
+      = _p('no-title')
