@@ -1,11 +1,12 @@
 ---
-title: about
+title: About
+subtitle: Hello Internet!
 date: 2017-08-08 01:03:40
-layout: about
+layout: single-column
 ---
-
-sections:
- title:### The purpose of this site
-
- content:This website is for marking down what I find interesting or I am doing. The topics might various in different feilds such as Christianity, Math, Physics, CS, and Games and puzzles etc. 
-Sidenote: I have been thinking about creating my own website for years, but there is always an excuse for me not doing so. Well, I can not let excuses control my life forever. And maybe it's the time to do something now. -- 08/02/2017
+<div class="purpose"><h2>The purpose of this site</h2><p id="interested-tops" class="size_19"> This website is for marking down what I find interesting or I am doing. The topics might various in different feilds such as<span v-for="item in items">{{ item.message }}</span> etc.<em class="sidenote note-color size_17">Sidenote: I have been thinking about creating my own website for years, but there is always an excuse for me not doing so. Well, I can not let excuses control my life forever. And maybe it's the time to do something now. -- 08/02/2017</em></p></div><br/>
+<div class="axiom"><h2>Axiom I admit</h2><p class="size_19">The Bible <span class="glyphicon glyphicon-heart" aria-hidden="true"></span></p></div><br/>
+<div class="definition"><h2>The definition of Klee</h2><p class="size_19">Klee is a child of God.<br/><em class="proof note-color	 size_17">Proof: Yet to all who did receive him, to those who believed in his name, he gave the right to become children of God— (<a href="https://www.bible.com/bible/111/JHN.1.12" target="_blank">John 1:12</a>)</em></p></div><br/>
+<div class="properties"><h2>Some properties of Klee with rough proof</h2><ul class="size_19"><li>Christian - <span class="note-color">Klee was <a href="https://www.bible.com/bible/111/ACT.2.38" target="_blank">baptized</a> on 04/29/2012.</span></li><li>INTP (<a href="https://en.wikipedia.org/wiki/INTP" target="_blank">MBTI</a>) - <span class="note-color">Lifestyle: thinking, thinking, thinking... hm need a break? thinking, thinking...</span></li><li>Hub -> Green (<a href="https://totalsdi.com/assessments/the-power-of-the-sdi/" target="_blank">SDI</a>) - <span class="note-color">logical, emotional, competitive... oh, also pretty chill</span></li><li>Math Major - <span class="note-color">Stony Brook University 2010 - 2014</span></li><li>Web Developer - <span class="note-color">2014 - now</span></li></ul></div><br/>
+<div class="contact"><h2>Contact Info</h2><p class="size_19">Nah you don't wanna contact me yet.</p></div>
+<br/>

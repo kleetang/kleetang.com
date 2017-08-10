@@ -38,11 +38,11 @@ html(lang='#{config.language}')
 
     #top.container.main-container
       .starter-template
-        h2='Hello Internet!'
+        h1=page.subtitle
       .col-xs-12: .content_container
         block content
-      .col-xs-12
-        != partial('_partial/footer.jade')
+    footer.container
+      != partial('_partial/footer.jade')
 
     include _partial/totop
     include _partial/after_footer
