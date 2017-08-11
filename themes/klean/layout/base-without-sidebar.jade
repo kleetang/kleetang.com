@@ -36,9 +36,9 @@ html(lang='#{config.language}')
             - for (var i in theme.menu)
               +a_with_current(theme.menu[i].directory, __(theme.menu[i].page), theme.menu[i].icon)
 
-    #top.container.main-container
+    .container.main-container
       .starter-template
-        h1=page.subtitle
+        h2=page.subtitle
       .col-xs-12: .content_container
         block content
     footer.container

@@ -1,9 +1,9 @@
 /**
  *
- * @package Maupassant
- * @author cho
- * @version 2.0
- * @link http://chopstack.com
+ * @package Klean
+ * @author Klee
+ * @version 1.0
+ * @link http://kleetang.com
  */
 
 /*
@@ -19,13 +19,24 @@ html, button, input, select, textarea,
 }
 
 body {
-    background-color: #FFF;
-    color: #444;
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif;
+    font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.75);
+    background: #fefefe;
+    scroll-behavior: smooth;
+    vertical-align: baseline;
     padding-top: 50px;
 }
+h2, h3, h4 {
+    font-weight: bold;
+}
+
+.size_15 {font-size: 15px;}
 .size_16 {font-size: 16px;}
 .size_17 {font-size: 17px;}
 .size_18 {font-size: 18px;}
@@ -35,7 +46,10 @@ body {
 .size_22 {font-size: 22px;}
 .hide {display: hidden;}
 
-.note-color {color:#333;}
+.note {
+    color:#333;
+    font-weight: 500;
+}
 
 .navbar-default {
     background-color: #fff;
@@ -45,7 +59,7 @@ body {
     color: #2c3e50;
 }
 #navbar .current {
-    background-color: #e4e4e4;
+    background-color: #f1f1f1;
     color:#333;
 }
 
@@ -159,7 +173,6 @@ nav #logo span {
     .widget {
         margin-bottom: 30px;
         .widget-title {
-            color: #6E7173;
             line-height: 2.7;
             margin-top: 0;
             font-size: 16px;
@@ -460,10 +473,6 @@ nav #logo span {
     font-size: 15px;
     line-height: 2;
     padding-bottom: .8em;
-    h2 {
-        margin: 0;
-        font: bold 25px / 1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
-    }
     .date {
         padding-right: .7em;
     }
