@@ -47,8 +47,8 @@ html(lang='#{config.language}')
         .col-md-3.hidden_mid_and_down: #sidebar
           each item in theme.widgets
             != partial('_widget/' + item + '.jade', null, {cache: !config.relative_link})
-      .col-xs-12
-        != partial('_partial/footer.jade')
+    footer.container
+      != partial('_partial/footer.jade')
 
     include _partial/totop
     include _partial/after_footer
