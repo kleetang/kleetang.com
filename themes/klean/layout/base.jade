@@ -36,7 +36,7 @@ html(lang='#{config.language}')
             - for (var i in theme.menu)
               +a_with_current(theme.menu[i].directory, __(theme.menu[i].page), theme.menu[i].icon)
 
-    #top.container.main-container
+    .container.main-container
       .col-md-9: .content_container
         block content
       if theme.widgets_on_small_screens
@@ -50,5 +50,5 @@ html(lang='#{config.language}')
     footer.container
       != partial('_partial/footer.jade')
 
-    include _partial/totop
+    include _partial/back_to_top
     include _partial/after_footer
